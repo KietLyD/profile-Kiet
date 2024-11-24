@@ -14,9 +14,6 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'documents', 'index.html'));
 });
 
-app.get('/contact', (req, res) => {
-    res.sendFile(path.join(__dirname, 'documents', 'contact.html'));
-});
 
 app.post('/contact', (req, res) => {
     const { name, email, message } = req.body;
